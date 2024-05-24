@@ -1,0 +1,8 @@
+ray[serve]
+starlette
+requests
+pandas
+fuzzywuzzy
+python-Levenshtein
+scikit-learn==1.4.0.
+xgboost==2.0.2

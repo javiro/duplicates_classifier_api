@@ -13,8 +13,10 @@ RUN pip3 install --upgrade pip
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-# Copy the model_deployment.py script into the container
+# Copy the required files into the container
 COPY serve_ml_duplicates_classifier.py /app/
+COPY best_model.sav /app/
+COPY db.db /app/
 
 # Expose ports 8000 for external access
 EXPOSE 8000
