@@ -7,6 +7,10 @@ Run the following bash commands to deploy the ML model in a Docker container.
 - Build the image: ```docker buildx build --tag 'duplicates_classifier' .```
 - Run the image: ```docker run -it -p 8002:8000 'duplicates_classifier'```
 
+### Test it
+
+```curl -X GET -d '"q_sr_id=crawler_believe__34028360&m_sr_id=crawler_believe__34168410"' http://localhost:8002/```
+
 ## Kubernetes deployment
 
 Run the following bash commands to deploy the ML model in a Kubernetes cluster.
